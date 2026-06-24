@@ -5,6 +5,13 @@ Kubernetes deployment that runs the two backend services together on one cluster
 [order-payment](https://github.com/jinwovo/order-payment) — alongside their infrastructure
 (Redis, PostgreSQL, Kafka). Runs on a local **[kind](https://kind.sigs.k8s.io/)** cluster (see Deploy).
 
+## Demo
+
+Six pods Running, the realtime Service load-balancing two replicas, and an order placed through the
+cluster — verified on k3d:
+
+![platform — Kubernetes deployment](docs/demo/demo.png)
+
 ## What it demonstrates
 
 - Both services deployed as containers in one namespace, wired to in-cluster infra by Service DNS
